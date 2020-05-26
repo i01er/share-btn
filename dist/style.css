@@ -61,15 +61,6 @@ p {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.share-btn-email .share-btn-icon:before {
-  content: "\e945";
-}
-.share-btn-more .share-btn-icon:before {
-  content: "\ea82";
-}
-.share-btn-googleplus .share-btn-icon:before {
-  content: "\ea88";
-}
 .share-btn-facebook .share-btn-icon:before {
   content: "\ea8c";
 }
@@ -79,26 +70,11 @@ p {
 .share-btn-twitter .share-btn-icon:before {
   content: "\ea91";
 }
-.share-btn-github .share-btn-icon:before {
-  content: "\eab4";
-}
-.share-btn-tumblr .share-btn-icon:before {
-  content: "\eabb";
-}
 .share-btn-reddit .share-btn-icon:before {
   content: "\eac7";
 }
 .share-btn-linkedin .share-btn-icon:before {
   content: "\eac8";
-}
-.share-btn-delicious .share-btn-icon:before {
-  content: "\eacc";
-}
-.share-btn-stumbleupon .share-btn-icon:before {
-  content: "\eace";
-}
-.share-btn-pinterest .share-btn-icon:before {
-  content: "\ead0";
 }
 .share-btn,
 .share-btn * {
