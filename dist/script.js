@@ -3,8 +3,8 @@ var app = angular.module("myApp", []);
 app.config(function($compileProvider){
   //other configuration code here
   $compileProvider.aHrefSanitizationWhitelist(/^\s*(whatsapp):/);
-  // $compileProvider.aHrefSanitizationWhitelist(/^\s*(https):/);
-  // $compileProvider.aHrefSanitizationWhitelist(/^\s*(http):/);
+  $compileProvider.aHrefSanitizationWhitelist(/^\s*(https):/);
+  $compileProvider.aHrefSanitizationWhitelist(/^\s*(http):/);
   // $compileProvider.aHrefSanitizationWhitelist(/^\s*(reddit):/);
 });
 
