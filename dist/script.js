@@ -3,9 +3,9 @@ var app = angular.module("myApp", []);
 app.config(function($compileProvider){
   //other configuration code here
   $compileProvider.aHrefSanitizationWhitelist(/^\s*(whatsapp):/);
-  $compileProvider.aHrefSanitizationWhitelist(/^\s*(facebook):/);
-  $compileProvider.aHrefSanitizationWhitelist(/^\s*(twitter):/);
-  $compileProvider.aHrefSanitizationWhitelist(/^\s*(reddit):/);
+  $compileProvider.aHrefSanitizationWhitelist(/^\s*(https):/);
+  $compileProvider.aHrefSanitizationWhitelist(/^\s*(http):/);
+  // $compileProvider.aHrefSanitizationWhitelist(/^\s*(reddit):/);
 });
 
 app.controller("myCtrl", function ($scope) {
