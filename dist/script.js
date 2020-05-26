@@ -1,17 +1,3 @@
-var app = angular.module("myApp", []);
-
-app.config(function($compileProvider){
-  //other configuration code here
-  $compileProvider.aHrefSanitizationWhitelist(/^\s*(whatsapp):/);
-  $compileProvider.aHrefSanitizationWhitelist(/^\s*(https):/);
-  $compileProvider.aHrefSanitizationWhitelist(/^\s*(http):/);
-  // $compileProvider.aHrefSanitizationWhitelist(/^\s*(reddit):/);
-});
-
-app.controller("myCtrl", function ($scope) {
-  $scope.title = "Argaam Article";
-  $scope.website = "https://www.argaam.com/en";
-
   (function () {
     var shareButtons = document.querySelectorAll(".share-btn");
 
@@ -29,5 +15,3 @@ app.controller("myCtrl", function ($scope) {
     }
 
   })();
-
-});
