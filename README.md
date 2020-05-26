@@ -11,3 +11,6 @@ UserID: the user id who sharing this page
 
 ### System Handling
 Once the other user clicked the link to enter the page, the website need to capture the UserID to ensure the sharing person.
+
+## Demo Page
+https://i01er.github.io/share-btn/dist/index.html
