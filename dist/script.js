@@ -1,5 +1,7 @@
 (function () {
   var shareButtons = document.querySelectorAll(".share-btn");
+  var showMobileBtn = document.getElementById("show-mobile-btn");
+  var showBtn = document.getElementById("show-btn");
 
   if (shareButtons) {
     [].forEach.call(shareButtons, function (button) {
@@ -20,6 +22,12 @@
     return check;
   };
 
-  console.log(window.mobileAndTabletCheck());
+  if (window.mobileAndTabletCheck()) {
+    showBtn.style.display = "none";
+    showMobileBtn.style.display = "block";
+  } else {
+    showBtn.style.display = "block";
+    showMobileBtn.style.display = "none";
+  }
 
 })();
